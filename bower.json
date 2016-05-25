@@ -1,0 +1,32 @@
+{
+  "name": "laravel-admin-demo",
+  "description": "a demo for laravel use adminLTE",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "https://github.com/liyu001989/laravel-admin-demo",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./",
+    "test",
+    "tests",
+    "./resources/assets/bower"
+  ],
+  "dependencies": {
+    "AdminLTE": "admin-lte#~2.3.3",
+    "bootstrap": "~3.3.6",
+    "bootbox.js": "bootbox#~4.4.0",
+    "requirejs": "~2.2.0",
+    "font-awesome": "fontawesome#~4.6.3"
+  },
+  "keywords": [
+    "laravel",
+    "adminLTE"
+  ],
+  "authors": [
+    "liyu001989@gmail.com"
+  ]
+}
