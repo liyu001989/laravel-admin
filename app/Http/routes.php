@@ -12,5 +12,36 @@
 */
 
 Route::get('/', function () {
-    return view('admin.common.layout');
+    return redirect(route('admin.dashboard'));
+});
+
+Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
+
+    Route::group(['middleware' => 'guest'], function () {
+        // 登录页面
+        Route::get('/auth/login', [
+            'as' => 'admin.auth.login.get',
+            'uses' => 'AuthController@getLogin',
+        ]);
+        // 登录提交
+        Route::post('/auth/login', [
+            'as' => 'admin.auth.login.post',
+            'uses' => 'AuthController@postLogin',
+        ]);
+    });
+
+    Route::group(['middleware' => 'auth'], function () {
+
+        Route::get('/', [
+            'as' => 'admin.dashboard',
+            'uses' => 'DashboardController@dashboard',
+        ]);
+
+        // 登出
+        Route::post('/auth/logout', [
+            'as' => 'admin.auth.logout',
+            'uses' => 'AuthController@logout',
+        ]);
+
+    });
 });

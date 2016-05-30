@@ -29,6 +29,7 @@ elixir(function(mix) {
 
     // fonts
     mix.copy('resources/assets/bower/font-awesome/fonts/', 'public/fonts/');
+    mix.copy('resources/assets/bower/bootstrap/fonts/', 'public/fonts/');
 
     // css 压缩
     mix.styles([

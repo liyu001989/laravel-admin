@@ -30,7 +30,7 @@
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-right">
-                                <a href="" class="btn btn-default btn-flat">Logout</a>
+                                <a href="{{ route('admin.auth.logout') }}" class="btn btn-default btn-flat">Logout</a>
                             </div>
                         </li>
                     </ul>
