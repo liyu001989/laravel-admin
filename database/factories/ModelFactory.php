@@ -11,11 +11,21 @@
 |
 */
 
-$factory->define(App\User::class, function (Faker\Generator $faker) {
+function randDate()
+{
+    return \Carbon\Carbon::now()
+        ->subDays(rand(1, 100))
+        ->subHours(rand(1, 23))
+        ->subMinutes(rand(1, 60));
+}
+
+$factory->define(AdminDemo\Models\User::class, function (Faker\Generator $faker) {
+    $createdAt = randDate();
     return [
         'name' => $faker->name,
         'email' => $faker->safeEmail,
         'password' => bcrypt(str_random(10)),
-        'remember_token' => str_random(10),
+        'created_at' => $createdAt,
+        'updated_at' => $createdAt,
     ];
 });

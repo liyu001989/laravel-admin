@@ -19,16 +19,19 @@ class AuthController extends BaseController
             'password' => 'required',
         ]);
 
-        $credentials = \Request::only('email', 'password');
+        $credentials = $request->only('email', 'password');
+        $credentials['is_admin'] = true;
 
         if (!$token = \Auth::attempt($credentials)) {
             $validator->after(function ($validator) {
-                $validator->errors()->add('error', '用户名或密码错误');
+                $validator->errors()->add('error', '邮箱或密码错误!');
             });
         }
 
         if ($validator->fails()) {
-            return redirect(route('admin.auth.login.get'))->withErrors($validator->messages());
+            return redirect(route('admin.auth.login.get'))
+                ->withInput($request->only('email'))
+                ->withErrors($validator->messages());
         }
 
         $redirect = session('url.intended') ?: route('admin.dashboard');

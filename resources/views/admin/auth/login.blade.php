@@ -25,7 +25,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 @include('admin.common.errors', ['errors'=>$errors])
 
                 <div class="form-group has-feedback">
-                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                    <input type="email" name="email" value="{{ old('email') }}" class="form-control" placeholder="Email" required>
                     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">

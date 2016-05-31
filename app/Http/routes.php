@@ -38,7 +38,7 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
         ]);
 
         // 登出
-        Route::post('/auth/logout', [
+        Route::get('/auth/logout', [
             'as' => 'admin.auth.logout',
             'uses' => 'AuthController@logout',
         ]);

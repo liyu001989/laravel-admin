@@ -19,6 +19,8 @@ class CreateUsers extends Migration
             $table->timestamps();
             $table->softDeletes();
 
+            $table->rememberToken();
+
             $table->index('email');
             $table->index('is_admin');
         });
