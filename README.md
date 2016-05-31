@@ -19,3 +19,9 @@
 - php artisan migrate
 - php artisan db:seed
 - gulp
+
+### maybe this
+- install envoy
+- envoy run init
+- configure your .env
+- envoy run database
