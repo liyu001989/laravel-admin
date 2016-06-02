@@ -8,7 +8,7 @@ require.config({
         slimscroll: 'jquery.slimscroll.min',
     },
     shim: {
-        'adminLTE': ['bootstrap', 'slimscroll'],
+        'adminLTE': ['jquery', 'bootstrap', 'slimscroll'],
         'bootbox': ['jquery', 'bootstrap'],
         'bootstrap': ['jquery'],
         'slimscroll': ['jquery']

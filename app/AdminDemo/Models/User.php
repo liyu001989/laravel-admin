@@ -26,4 +26,9 @@ class User extends BaseModel implements AuthenticatableContract
     {
         return $this->hasMany('AdminDemo\Models\PostComment');
     }
+
+    public function getAvatarAttribute()
+    {
+        return $this->attributes['avatar'] ? url($this->attributes['avatar']) : asset('images/user-avatar.jpg');
+    }
 }
