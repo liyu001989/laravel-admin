@@ -43,5 +43,11 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
             'uses' => 'AuthController@logout',
         ]);
 
+        // 用户列表
+        Route::get('/users', [
+            'as' => 'admin.users.index',
+            'uses' => 'UserController@index',
+        ]);
+
     });
 });

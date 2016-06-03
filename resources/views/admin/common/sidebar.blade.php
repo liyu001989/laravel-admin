@@ -26,13 +26,13 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active treeview">
-          <a href="#">
+        <li class="{{ Route::is('admin.dashboard') ? 'active' : null}} treeview">
+          <a href="{{ route('admin.dashboard') }}">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
-        <li class="treeview">
-          <a href="#">
+        <li class="{{ Route::is('admin.users.*') ? 'active' : null}} treeview">
+          <a href="{{ route('admin.users.index') }}">
             <i class="fa fa-users"></i>
             <span>User List</span>
           </a>
