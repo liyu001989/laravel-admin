@@ -28,13 +28,13 @@
         <li class="header">MAIN NAVIGATION</li>
         <li class="{{ Route::is('admin.dashboard') ? 'active' : null}} treeview">
           <a href="{{ route('admin.dashboard') }}">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            <i class="fa fa-dashboard"></i> <span>仪表盘</span>
           </a>
         </li>
         <li class="{{ Route::is('admin.users.*') ? 'active' : null}} treeview">
           <a href="{{ route('admin.users.index') }}">
             <i class="fa fa-users"></i>
-            <span>User List</span>
+            <span>用户管理</span>
           </a>
         </li>
       </ul>

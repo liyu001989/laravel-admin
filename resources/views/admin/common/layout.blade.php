@@ -19,37 +19,35 @@
     <![endif]-->
 </head>
 <body class="hold-transition skin-red-light sidebar-mini">
+
     <div class="wrapper">
 
         @include('admin.common.header')
 
         @include('admin.common.sidebar')
 
-      <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
+
             <section class="content-header">
               <h1>
-                Dashboard
-                <small>Control panel</small>
+                @yield('page-title', 'Laravel Admin')
+                <small>@yield('page-description', null)</small>
               </h1>
+
               <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
                 <li class="active">Dashboard</li>
               </ol>
             </section>
 
-            <!-- Main content -->
             <section class="content">
                 @yield('content')
 
             </section>
-            <!-- /.content -->
         </div>
-        <!-- /.content-wrapper -->
+
         @include('admin.common.footer')
     </div>
-    <!-- ./wrapper -->
 
     <script src="{{ asset('js/require.min.js') }}" data-main="{{ asset('js/admin/main.js') }}"></script>
 </body>

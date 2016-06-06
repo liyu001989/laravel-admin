@@ -33,9 +33,9 @@ elixir(function(mix) {
 
     // css 压缩
     mix.styles([
+        '../bower/bootstrap/dist/css/bootstrap.min.css',
         '../bower/AdminLTE/dist/css/AdminLTE.min.css',
         '../bower/AdminLTE/dist/css/skins/skin-red-light.min.css',
-        '../bower/bootstrap/dist/css/bootstrap.min.css',
         '../bower/font-awesome/css/font-awesome.min.css',
     ]);
 
