@@ -12,13 +12,6 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        //创建一个管理员
-        User::updateOrCreate(['email' => 'liyu001989@gmail.com'], [
-            'name' => 'liyu001989',
-            'is_admin' => true,
-            'password' => bcrypt(123456),
-        ]);
-
         // 填充好多用户
         $users = factory(User::class)->times(100)->make();
         User::insert($users->toArray());

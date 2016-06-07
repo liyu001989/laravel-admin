@@ -49,7 +49,6 @@
                             <td>邮箱</td>
                             <td>注册时间</td>
                             <td class="text-nowrap">状态</td>
-                            <td class="text-nowrap">管理员</td>
                             <td>操作</td>
                         </tr>
                     </thead>
@@ -68,13 +67,6 @@
                                     <span class="text-red"><i class="fa fa-close" aria-hidden="true"></i></span>
                                 @endif
                             </td>
-                            <td>
-                                @if ($user->is_admin)
-                                    <span class="text-green"><i class="fa fa-check" aria-hidden="true"></i></span>
-                                @else
-                                    <span class="text-red"><i class="fa fa-close" aria-hidden="true"></i></span>
-                                @endif
-                            </td>
 
                             <td>
                                 <div class="btn-group">
@@ -87,11 +79,6 @@
                                         <li>
                                             <a class="change-status" data-id="{{$user->id}}">
                                                 {{$user->status == 'ACTIVE' ? '禁用' : '激活'}}
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="change-admin" data-id="{{$user->id}}">
-                                                {{$user->status == 'ACTIVE' ? '设为管理员' : '取消管理员'}}
                                             </a>
                                         </li>
                                     </ul>

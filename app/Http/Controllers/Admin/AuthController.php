@@ -19,7 +19,6 @@ class AuthController extends BaseController
         ]);
 
         $credentials = $request->only('email', 'password');
-        $credentials['is_admin'] = true;
 
         if (!$token = \Auth::attempt($credentials)) {
             $validator->after(function ($validator) {
