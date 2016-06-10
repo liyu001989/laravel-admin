@@ -56,7 +56,7 @@
                     @foreach($users as $user)
                         <tr role="row">
                             <td><a href="{{ route('admin.users.show', $user->id) }}">{{@$user->id}}</a></td>
-                            <td><img width="50px" src="{{ url($user->avatar) }}"></td>
+                            <td><img width="50px" src="{{ $user->avatar }}"></td>
                             <td>{{$user->name}}</td>
                             <td>{{$user->email}}</td>
                             <td>{{$user->created_at}}</td>

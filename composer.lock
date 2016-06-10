@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c284a9c122da36c99a8b6597bdce7aa6",
-    "content-hash": "8b1485987e7c5949da82435d403e52e8",
+    "hash": "1dde89ccbfb2b73f29056a16caad6b3d",
+    "content-hash": "f42ad167bdb812adb28c64eb0b8b8db3",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -160,6 +160,54 @@
                 "string"
             ],
             "time": "2015-11-06 14:35:42"
+        },
+        {
+            "name": "irazasyed/laravel-identicon",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/irazasyed/laravel-identicon.git",
+                "reference": "86dba3ab45a34f3081e01e73a921572851a4831e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/irazasyed/laravel-identicon/zipball/86dba3ab45a34f3081e01e73a921572851a4831e",
+                "reference": "86dba3ab45a34f3081e01e73a921572851a4831e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~4.1|~5.0",
+                "php": ">=5.4.0",
+                "yzalis/identicon": "~1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Irazasyed\\LaravelIdenticon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Syed I.R",
+                    "email": "syed@lukonet.com"
+                }
+            ],
+            "description": "Laravel Identicon Package - Extends Identicon Library and Adds Support for Seamless Usage with Laravel 4/5.",
+            "homepage": "http://irazasyed.github.io/laravel-identicon/",
+            "keywords": [
+                "Laravel 4",
+                "avatar",
+                "identicon",
+                "image",
+                "laravel",
+                "laravel 5",
+                "laravel identicon"
+            ],
+            "time": "2015-02-27 04:13:41"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -1777,6 +1825,56 @@
                 "environment"
             ],
             "time": "2016-04-15 10:48:49"
+        },
+        {
+            "name": "yzalis/identicon",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yzalis/Identicon.git",
+                "reference": "a99fc2a3d018512f7914bc6f972952536c0f309b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yzalis/Identicon/zipball/a99fc2a3d018512f7914bc6f972952536c0f309b",
+                "reference": "a99fc2a3d018512f7914bc6f972952536c0f309b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "fzaninotto/faker": "1.2.*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Identicon": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Laugueux",
+                    "email": "benjamin@yzalis.com"
+                }
+            ],
+            "description": "Create awesome unique avatar.",
+            "homepage": "http://identicon-php.org",
+            "keywords": [
+                "avatar",
+                "identicon",
+                "image"
+            ],
+            "time": "2014-07-13 09:19:12"
         }
     ],
     "packages-dev": [

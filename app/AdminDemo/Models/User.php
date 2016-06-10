@@ -27,6 +27,6 @@ class User extends BaseModel
 
     public function getAvatarAttribute()
     {
-        return $this->attributes['avatar'] ? url($this->attributes['avatar']) : asset('images/user-avatar.jpg');
+        return $this->attributes['avatar'] ? url($this->attributes['avatar']) : \Identicon::getImageDataUri($this->attributes['email']);
     }
 }

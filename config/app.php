@@ -159,6 +159,8 @@ return [
         // view composer
         App\Providers\ComposerServiceProvider::class,
 
+        // identicon
+        Irazasyed\LaravelIdenticon\ServiceProvider::class,
     ],
 
     /*
@@ -205,6 +207,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        'Identicon'  => Irazasyed\LaravelIdenticon\Facade::class,
     ],
 
 ];

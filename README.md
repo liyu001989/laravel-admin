@@ -24,7 +24,7 @@
 - php artisan db:seed
 - gulp
 
-### maybe this
+### envoy
 - install envoy
 - envoy run init
 - configure your .env
