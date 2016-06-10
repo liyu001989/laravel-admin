@@ -96,6 +96,5 @@
             {!! $users->render() !!}
         </div>
     </div>
-    <!-- /.box-body -->
 </div>
 @endsection
