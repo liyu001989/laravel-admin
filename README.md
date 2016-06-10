@@ -19,6 +19,10 @@ email: admin@foo.com
 
 password: 123456
 
+![login](resources/assets/images/login.jpg)
+
+![list](resources/assets/images/list.jpg)
+
 ## usage
 
 ### normal
@@ -43,3 +47,4 @@ password: 123456
 - search tips
 - users posts curd
 - breadcrumbs
+
