@@ -45,5 +45,7 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
 
         Route::resource('users', 'UserController');
 
+        Route::resource('posts', 'PostController');
+
     });
 });
