@@ -25,4 +25,15 @@ require(['jquery'], function ($) {
       'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
     }
   })
+
+  // 用过标签加载js
+  $('body').ready(function () {
+    var requires = []
+
+    $('[data-require]').each(function (index, item) {
+      requires.push($(item).data('require'))
+    })
+
+    require(requires)
+  })
 })
