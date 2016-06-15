@@ -5,13 +5,15 @@ require.config({
     bootstrap: 'bootstrap.min',
     bootbox: 'bootbox.min',
     adminLTE: 'AdminLTE.min',
-    slimscroll: 'jquery.slimscroll.min'
+    slimscroll: 'jquery.slimscroll.min',
+    laravel: 'admin/common/laravel.js'
   },
   shim: {
     'adminLTE': ['jquery', 'bootstrap', 'slimscroll'],
     'bootbox': ['jquery', 'bootstrap'],
     'bootstrap': ['jquery'],
-    'slimscroll': ['jquery']
+    'slimscroll': ['jquery'],
+    'laravel': ['bootbox']
   }
 })
 
