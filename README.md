@@ -48,3 +48,6 @@ password: 123456
 - users posts curd
 - breadcrumbs
 
+## License
+
+[MIT license](http://opensource.org/licenses/MIT)
