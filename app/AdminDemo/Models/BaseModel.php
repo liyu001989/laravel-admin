@@ -13,5 +13,5 @@ class BaseModel extends Model
 {
     protected $casts = ['created_at', 'updated_at'];
 
-    protected $hidden = ['updated_at', 'deleted_at', 'extra'];
+    protected $hidden = ['deleted_at', 'extra'];
 }

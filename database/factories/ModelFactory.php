@@ -29,3 +29,33 @@ $factory->define(AdminDemo\Models\User::class, function (Faker\Generator $faker)
         'updated_at' => $createdAt,
     ];
 });
+
+$factory->define(AdminDemo\Models\Post::class, function (Faker\Generator $faker) {
+
+    $userIds = AdminDemo\Models\User::lists('id')->toArray();
+    $createdAt = randDate();
+
+    return [
+        'user_id' => $faker->randomElement($userIds),
+        'title' => $faker->sentence(),
+        'content' => $faker->text,
+        'created_at' => $createdAt,
+        'updated_at' => $createdAt,
+    ];
+});
+
+$factory->define(AdminDemo\Models\PostComment::class, function (Faker\Generator $faker) {
+
+    $userIds = AdminDemo\Models\User::lists('id')->toArray();
+    $postIds = AdminDemo\Models\Post::lists('id')->toArray();
+    $createdAt = randDate();
+
+    return [
+        'user_id' => $faker->randomElement($userIds),
+        'reply_user_id' => $faker->randomElement($userIds),
+        'post_id' => $faker->randomElement($postIds),
+        'content' => $faker->text,
+        'created_at' => $createdAt,
+        'updated_at' => $createdAt,
+    ];
+});

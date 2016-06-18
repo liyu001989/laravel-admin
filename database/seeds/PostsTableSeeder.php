@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use AdminDemo\Models\Post;
 
 class PostsTableSeeder extends Seeder
 {
@@ -11,6 +12,7 @@ class PostsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $posts = factory(Post::class)->times(100)->make();
+        Post::insert($posts->toArray());
     }
 }

@@ -13,7 +13,7 @@ class User extends BaseModel
     protected $hidden = ['password'];
 
     // 可填充的字段
-    protected $fillable = ['name', 'avatar'];
+    protected $fillable = ['name', 'avatar', 'password'];
 
     public function posts()
     {
