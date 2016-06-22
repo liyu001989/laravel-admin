@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use AdminDemo\Models\User;
-use Illuminate\Http\Request;
+use App\Http\Requests\User\StoreRequest;
 
 class UserController extends BaseController
 {
@@ -17,5 +17,10 @@ class UserController extends BaseController
     public function create()
     {
         return view('admin.user.create');
+    }
+
+    public function store(StoreRequest $request)
+    {
+
     }
 }

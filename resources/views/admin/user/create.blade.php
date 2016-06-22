@@ -5,8 +5,10 @@
 <div class="box">
     <div class="box-body">
         <form method="post" action="{{route('admin.users.store')}}" id="form" enctype="multipart/form-data" class="form-horizontal">
+            {{ csrf_field() }}
 
             @include('admin.common.errors')
+
             <div class="row">
                 <div class="col-md-6">
                     <div class="col-md-12 form-group">
@@ -55,24 +57,9 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="col-md-6">
-                    <div class="col-md-12 form-group">
-                        <label class="control-label">头 像:</label>
-
-                        <label class="btn btn-info btn-file">
-                          <input name="avatar" type="file" accept="image/*" data-image-preview="#avatar-preview">
-                          选择
-                        </label>
-                    </div>
-
-                    <div class="col-md-12">
-                        <img id="avatar-preview"  width="300px">
-                    </div>
-                </div> -->
             </div>
         </form>
     </div>
 </div>
-<script type="text/javascript" data-require="admin/upload-preview"></script>
+<js data-require="admin/upload-preview"></js>
 @endsection

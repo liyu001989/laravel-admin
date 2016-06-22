@@ -6,5 +6,13 @@ use Illuminate\Foundation\Http\FormRequest;
 
 abstract class Request extends FormRequest
 {
-    //
+    public function authorize()
+    {
+        return true;
+    }
+
+    protected function failedAuthorization()
+    {
+        abort(403);
+    }
 }
