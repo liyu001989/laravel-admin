@@ -21,6 +21,7 @@ function randDate()
 
 $factory->define(AdminDemo\Models\User::class, function (Faker\Generator $faker) {
     $createdAt = randDate();
+
     return [
         'name' => $faker->name,
         'email' => $faker->safeEmail,
@@ -31,7 +32,6 @@ $factory->define(AdminDemo\Models\User::class, function (Faker\Generator $faker)
 });
 
 $factory->define(AdminDemo\Models\Post::class, function (Faker\Generator $faker) {
-
     $userIds = AdminDemo\Models\User::lists('id')->toArray();
     $createdAt = randDate();
 
@@ -45,7 +45,6 @@ $factory->define(AdminDemo\Models\Post::class, function (Faker\Generator $faker)
 });
 
 $factory->define(AdminDemo\Models\PostComment::class, function (Faker\Generator $faker) {
-
     $userIds = AdminDemo\Models\User::lists('id')->toArray();
     $postIds = AdminDemo\Models\Post::lists('id')->toArray();
     $createdAt = randDate();

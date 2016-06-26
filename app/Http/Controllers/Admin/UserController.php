@@ -21,6 +21,5 @@ class UserController extends BaseController
 
     public function store(StoreRequest $request)
     {
-
     }
 }
