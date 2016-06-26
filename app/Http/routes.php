@@ -16,7 +16,6 @@ Route::get('/', function () {
 });
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
-
     Route::group(['middleware' => 'guest'], function () {
         // 登录页面
         Route::get('/auth/login', [
@@ -31,7 +30,6 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
     });
 
     Route::group(['middleware' => 'auth'], function () {
-
         Route::get('/', [
             'as' => 'admin.dashboard',
             'uses' => 'DashboardController@dashboard',
@@ -46,6 +44,5 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
         Route::resource('users', 'UserController');
 
         Route::resource('posts', 'PostController');
-
     });
 });
