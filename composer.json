@@ -7,7 +7,9 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
-        "irazasyed/laravel-identicon": "~1.1"
+        "irazasyed/laravel-identicon": "~1.1",
+        "davejamesmiller/laravel-breadcrumbs": "^3.0",
+        "zizaco/entrust": "5.2.x-dev"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
