@@ -1,5 +1,7 @@
 # laravel-admin-demo
 
+Laravel 5.3 后台 demo。
+
 工作中使用 adminLTE 写的后台，挺好用的，整理一下，写个demo
 
 ## 介绍
@@ -9,9 +11,7 @@
 - 最后所有第三方的css合并成一个all.css，项目的sass编译为app.css
 - 使用requirejs异步加载所有的js
 
-个人觉得这样应该是laravel比较好的打开方式，不知道怎么处理好的时候，多看看别人的项目还是很有帮助的，比如viease，phphub-server等
-
-## DEMO
+个人觉得这样应该是laravel比较好的打开方式。
 
 http://laravel-admin.lyyw.info/
 

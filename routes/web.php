@@ -15,29 +15,29 @@ Route::get('/', function () {
     return redirect(route('admin.dashboard'));
 });
 
-Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
+Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::group(['middleware' => 'guest'], function () {
         // 登录页面
         Route::get('/auth/login', [
-            'as' => 'admin.auth.login.get',
+            'as' => 'auth.login.get',
             'uses' => 'AuthController@getLogin',
         ]);
         // 登录提交
         Route::post('/auth/login', [
-            'as' => 'admin.auth.login.post',
+            'as' => 'auth.login.post',
             'uses' => 'AuthController@postLogin',
         ]);
     });
 
     Route::group(['middleware' => 'auth'], function () {
         Route::get('/', [
-            'as' => 'admin.dashboard',
+            'as' => 'dashboard',
             'uses' => 'DashboardController@dashboard',
         ]);
 
         // 登出
         Route::get('/auth/logout', [
-            'as' => 'admin.auth.logout',
+            'as' => 'auth.logout',
             'uses' => 'AuthController@logout',
         ]);
 
