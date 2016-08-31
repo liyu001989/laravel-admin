@@ -37,6 +37,20 @@
             <span>用户管理</span>
           </a>
         </li>
+        <li class="treeview">
+            <a href="#">
+                <i class="fa fa-user-secret"></i> <span>管理员管理</span>
+                <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu menu-open">
+                <li class="">
+                    <a href=""><i class="fa fa-circle-o"></i>管理员列表</a>
+                </li>
+                <li class="">
+                    <a href=""><i class="fa fa-circle-o"></i>角色管理</a>
+                </li>
+            </ul>
+        </li>
       </ul>
     </section>
     <!-- /.sidebar -->

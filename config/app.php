@@ -164,21 +164,26 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
-         * Application Service Providers...
+         * Package Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
 
         // view composer
         App\Providers\ComposerServiceProvider::class,
         // identicon
         Irazasyed\LaravelIdenticon\ServiceProvider::class,
-
         // scout
         Laravel\Scout\ScoutServiceProvider::class,
+        // entrust
+        Zizaco\Entrust\EntrustServiceProvider::class,
+
+        /*
+         * Application Service Providers...
+         */
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
     ],
 
     /*
@@ -227,6 +232,9 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Identicon'  => Irazasyed\LaravelIdenticon\Facade::class,
+
+        // entrust
+        'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
     ],
 
 ];
