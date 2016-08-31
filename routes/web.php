@@ -16,18 +16,6 @@ Route::get('/', function () {
 });
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'as' => 'admin.'], function () {
-    Route::group(['middleware' => 'guest'], function () {
-        // 登录页面
-        Route::get('/auth/login', [
-            'as' => 'auth.login.get',
-            'uses' => 'AuthController@getLogin',
-        ]);
-        // 登录提交
-        Route::post('/auth/login', [
-            'as' => 'auth.login.post',
-            'uses' => 'AuthController@postLogin',
-        ]);
-    });
 
     Route::group(['middleware' => 'auth'], function () {
         Route::get('/', [
@@ -35,14 +23,12 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'as' => 'admin.'], fu
             'uses' => 'DashboardController@dashboard',
         ]);
 
-        // 登出
-        Route::get('/auth/logout', [
-            'as' => 'auth.logout',
-            'uses' => 'AuthController@logout',
-        ]);
-
         Route::resource('users', 'UserController');
 
         Route::resource('posts', 'PostController');
     });
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

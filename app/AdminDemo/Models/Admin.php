@@ -2,19 +2,33 @@
 
 namespace AdminDemo\Models;
 
-use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
-use Illuminate\Auth\Authenticatable;
+//use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
+//use Illuminate\Auth\Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
-class Admin extends BaseModel implements AuthenticatableContract
+use Illuminate\Auth\Authenticatable;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Auth\Passwords\CanResetPassword;
+use Illuminate\Foundation\Auth\Access\Authorizable;
+use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
+use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
+use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
+
+class Admin extends BaseModel implements
+    AuthenticatableContract,
+    AuthorizableContract,
+    CanResetPasswordContract
 {
     // 软删除和用户验证attempt
-    use Authenticatable;
+    //use Authenticatable;
+    use Authenticatable, Authorizable, CanResetPassword;
+    use Notifiable;
 
     // 查询用户的时候，不暴露密码
     protected $hidden = ['password'];
 
     // 可填充的字段
-    protected $fillable = ['name', 'avatar'];
+    protected $fillable = ['name', 'avatar', 'email', 'password'];
 
     public function getAvatarAttribute()
     {

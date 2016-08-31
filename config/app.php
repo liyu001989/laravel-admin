@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'My Application',
+    'name' => 'Laravel Admin Demo',
 
     /*
     |--------------------------------------------------------------------------
@@ -176,6 +176,9 @@ return [
         App\Providers\ComposerServiceProvider::class,
         // identicon
         Irazasyed\LaravelIdenticon\ServiceProvider::class,
+
+        // scout
+        Laravel\Scout\ScoutServiceProvider::class,
     ],
 
     /*
