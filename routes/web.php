@@ -15,7 +15,7 @@ Route::get('/', function () {
     return redirect(route('admin.dashboard'));
 });
 
-Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'as' => 'admin.'], function () {
+Route::group(['namespace' => 'Admin', 'as' => 'admin.'], function () {
 
     Route::group(['middleware' => 'auth'], function () {
         Route::get('/', [
@@ -30,5 +30,3 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'as' => 'admin.'], fu
 });
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index');
