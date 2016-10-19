@@ -97,4 +97,10 @@
         </div>
     </div>
 </div>
+
+<script>
+    require(['jquery'], function($) {
+        alert(1);
+    });
+</script>
 @endsection

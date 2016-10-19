@@ -40,7 +40,9 @@
         <li class="treeview">
             <a href="#">
                 <i class="fa fa-user-secret"></i> <span>管理员管理</span>
-                <i class="fa fa-angle-left pull-right"></i>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
             </a>
             <ul class="treeview-menu menu-open">
                 <li class="">

@@ -16,13 +16,12 @@
     "./resources/assets/bower"
   ],
   "dependencies": {
-    "AdminLTE": "admin-lte#~2.3.3",
-    "bootstrap": "~3.3.6",
+    "AdminLTE": "admin-lte#~2.3.6",
+    "bootstrap": "3.3.6",
     "bootbox.js": "bootbox#~4.4.0",
-    "requirejs": "~2.2.0",
+    "requirejs": "~2.3.1",
     "font-awesome": "fontawesome#~4.6.3",
-    "bs-typeahead": "^0.0.5",
-    "slimscroll": "^1.3.7"
+    "jquery-slimscroll": "slimscroll#^1.3.8"
   },
   "keywords": [
     "laravel",
@@ -30,5 +29,8 @@
   ],
   "authors": [
     "liyu001989@gmail.com"
-  ]
+  ],
+  "resolutions": {
+    "requirejs": "~2.3.1"
+  }
 }

@@ -6,7 +6,7 @@ require.config({
     bootbox: 'bootbox.min',
     adminLTE: 'AdminLTE.min',
     slimscroll: 'jquery.slimscroll.min',
-    laravel: 'admin/common/laravel.js'
+    laravel: 'admin/laravel'
   },
   shim: {
     'adminLTE': ['jquery', 'bootstrap', 'slimscroll'],
@@ -17,14 +17,14 @@ require.config({
   }
 })
 
-require(['adminLTE'])
+require(['adminLTE', 'laravel']);
 
 require(['jquery'], function ($) {
   $.ajaxSetup({
     headers: {
       'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
     }
-  })
+  });
 
   // 用过标签加载js
   $('body').ready(function () {
@@ -35,5 +35,5 @@ require(['jquery'], function ($) {
     })
 
     require(requires)
-  })
-})
+  });
+});
