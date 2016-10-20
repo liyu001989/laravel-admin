@@ -19,6 +19,8 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript" src="{{ asset('js/require.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/admin/main.js') }}"></script>
 </head>
 <body class="hold-transition skin-red-light sidebar-mini">
 
@@ -49,7 +51,5 @@
 
         @include('admin.common.footer')
     </div>
-
-    <script src="{{ asset('js/require.min.js') }}" data-main="{{ asset('js/admin/main.js') }}"></script>
 </body>
 </html>

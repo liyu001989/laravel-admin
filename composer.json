@@ -13,7 +13,9 @@
         "laravel/scout": "^1.0",
         "guzzlehttp/guzzle": "^6.2",
         "predis/predis": "^1.1",
-        "doctrine/dbal": "^2.5"
+        "doctrine/dbal": "^2.5",
+        "rap2hpoutre/laravel-log-viewer": "^0.7.0",
+        "laracasts/flash": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

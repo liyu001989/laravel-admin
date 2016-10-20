@@ -6,14 +6,18 @@ require.config({
     bootbox: 'bootbox.min',
     adminLTE: 'AdminLTE.min',
     slimscroll: 'jquery.slimscroll.min',
-    laravel: 'admin/laravel'
+    laravel: 'admin/laravel',
+    'datatables.net': 'jquery.dataTables.min',
+    datatables: 'dataTables.bootstrap.min',
+    select2: 'select2.full.min'
   },
   shim: {
     'adminLTE': ['jquery', 'bootstrap', 'slimscroll'],
     'bootbox': ['jquery', 'bootstrap'],
     'bootstrap': ['jquery'],
     'slimscroll': ['jquery'],
-    'laravel': ['bootbox']
+    'laravel': ['bootbox'],
+    'select2': ['jquery']
   }
 })
 

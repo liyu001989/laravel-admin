@@ -26,7 +26,14 @@ Route::group(['namespace' => 'Admin', 'as' => 'admin.'], function () {
         Route::resource('users', 'UserController');
 
         Route::resource('posts', 'PostController');
+
+        // 查看日志
+        Route::get('logs', [
+            'as' => 'logs',
+            'uses' => '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index',
+        ]);
     });
+
 });
 
 Auth::routes();

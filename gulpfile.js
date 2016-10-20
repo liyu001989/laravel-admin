@@ -18,7 +18,10 @@ elixir(function(mix) {
     mix.copy('resources/assets/bower/AdminLTE/dist/js/app.min.js', 'public/js/AdminLTE.min.js');
     mix.copy('resources/assets/bower/jquery/dist/jquery.min.js', 'public/js/jquery.min.js');
     mix.copy('resources/assets/bower/bootstrap/dist/js/bootstrap.min.js', 'public/js/bootstrap.min.js');
-    mix.copy('resources/assets/bower/slimscroll/jquery.slimscroll.min.js', 'public/js/jquery.slimscroll.min.js');
+    mix.copy('resources/assets/bower/jquery-slimscroll/jquery.slimscroll.min.js', 'public/js/jquery.slimscroll.min.js');
+    mix.copy('resources/assets/bower/datatables/media/js/jquery.dataTables.min.js', 'public/js/jquery.dataTables.min.js');
+    mix.copy('resources/assets/bower/datatables/media/js/dataTables.bootstrap.min.js', 'public/js/dataTables.bootstrap.min.js');
+    mix.copy('resources/assets/bower/select2/dist/js/select2.full.min.js', 'public/js/select2.full.min.js');
 
     // js admin
     mix.copy('resources/assets/js/', 'public/js/');
@@ -34,9 +37,11 @@ elixir(function(mix) {
     // css 压缩
     mix.styles([
         '../bower/bootstrap/dist/css/bootstrap.min.css',
+        '../bower/select2/dist/css/select2.min.css',
         '../bower/AdminLTE/dist/css/AdminLTE.min.css',
         '../bower/AdminLTE/dist/css/skins/skin-red-light.min.css',
         '../bower/font-awesome/css/font-awesome.min.css',
+        '../bower/datatables/media/css/dataTables.bootstrap.min.css'
     ]);
 
 });

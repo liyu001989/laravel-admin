@@ -53,6 +53,12 @@
                 </li>
             </ul>
         </li>
+        <li class="{{ Route::is('admin.logs') ? 'active' : null}} treeview">
+          <a href="{{ route('admin.logs') }}">
+            <i class="fa fa-bug"></i>
+            <span>日志管理</span>
+          </a>
+        </li>
       </ul>
     </section>
     <!-- /.sidebar -->

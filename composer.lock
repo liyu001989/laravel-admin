@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ccd25c5c21b4e54f0b5d2dd8775a4483",
-    "content-hash": "5c6b9903e0bdb36000394c200a33177a",
+    "hash": "27b07e56ccef101e67aef9d0be9707b9",
+    "content-hash": "651a068437a21a592006c0498915d877",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -977,6 +977,49 @@
             "time": "2015-12-05 17:17:57"
         },
         {
+            "name": "laracasts/flash",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laracasts/flash.git",
+                "reference": "03eec812fd6ae948664ff51b4320785f6d15ee5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laracasts/flash/zipball/03eec812fd6ae948664ff51b4320785f6d15ee5d",
+                "reference": "03eec812fd6ae948664ff51b4320785f6d15ee5d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Laracasts\\Flash": "src/"
+                },
+                "files": [
+                    "src/Laracasts/Flash/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeffrey Way",
+                    "email": "jeffrey@laracasts.com"
+                }
+            ],
+            "description": "Easy flash notifications",
+            "time": "2016-07-11 20:46:02"
+        },
+        {
             "name": "laravel/framework",
             "version": "v5.3.18",
             "source": {
@@ -1816,6 +1859,52 @@
                 "uuid"
             ],
             "time": "2016-10-02 15:51:17"
+        },
+        {
+            "name": "rap2hpoutre/laravel-log-viewer",
+            "version": "v0.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rap2hpoutre/laravel-log-viewer.git",
+                "reference": "3ff06fb16e9cf8bfb581d29bd7da3cd3c0baa5d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rap2hpoutre/laravel-log-viewer/zipball/3ff06fb16e9cf8bfb581d29bd7da3cd3c0baa5d7",
+                "reference": "3ff06fb16e9cf8bfb581d29bd7da3cd3c0baa5d7",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.2.*|5.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/controllers"
+                ],
+                "psr-0": {
+                    "Rap2hpoutre\\LaravelLogViewer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "rap2hpoutre",
+                    "email": "raphaelht@gmail.com"
+                }
+            ],
+            "description": "A Laravel log reader",
+            "keywords": [
+                "log",
+                "log-reader",
+                "log-viewer",
+                "logging"
+            ],
+            "time": "2016-06-23 14:07:52"
         },
         {
             "name": "swiftmailer/swiftmailer",

@@ -175,7 +175,8 @@ return [
         Laravel\Scout\ScoutServiceProvider::class,
         // entrust
         Zizaco\Entrust\EntrustServiceProvider::class,
-
+        //log
+        Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
         /*
          * Application Service Providers...
          */

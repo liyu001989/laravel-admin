@@ -24,3 +24,21 @@
         min-width: 80px
     }
 }
+
+.word-break {
+    -ms-word-break: break-all;
+    word-break: break-all;
+
+    /* Non standard for webkit */
+    word-break: break-word;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+a.llv-active {
+    z-index: 2;
+    background-color: #f5f5f5;
+    border-color: #777;
+}
