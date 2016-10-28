@@ -4,6 +4,7 @@
  * @author    liyu
  * @desc      基础模型
  */
+
 namespace AdminDemo\Models;
 
 use Illuminate\Database\Eloquent\Model;

@@ -16,19 +16,17 @@ class PermissionsTableSeeder extends Seeder
             [
                 'name' => 'users.manage',
                 'display_name' => '管理所有用户',
-                'description' => '管理所有用户，包括用户的增删改查'
+                'description' => '管理所有用户，包括用户的增删改查',
             ],
             [
                 'name' => 'posts.manage',
                 'display_name' => '管理所有帖子',
-                'description' => '管理所有贴子，包括贴子的增删改查'
+                'description' => '管理所有贴子，包括贴子的增删改查',
             ],
         ];
 
-        foreach($data as $item) {
-
+        foreach ($data as $item) {
             Permission::updateOrCreate(['name' => $item['name']], $item);
         }
-
     }
 }

@@ -20,7 +20,7 @@ class AuthController extends BaseController
 
         $credentials = $request->only('email', 'password');
 
-        if (! $token = \Auth::attempt($credentials)) {
+        if (!$token = \Auth::attempt($credentials)) {
             $validator->after(function ($validator) {
                 $validator->errors()->add('error', '邮箱或密码错误!');
             });
