@@ -1,6 +1,6 @@
 <?php
 
-namespace AdminDemo\ViewComposers;
+namespace App\ViewComposers;
 
 use Illuminate\View\View;
 use Illuminate\Auth\AuthManager;

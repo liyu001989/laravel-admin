@@ -10,7 +10,7 @@ class ComposerServiceProvider extends ServiceProvider
     {
         \View::composer(
             ['admin.common.header', 'admin.common.sidebar'],
-            'AdminDemo\ViewComposers\AdminComposer'
+            'App\ViewComposers\AdminComposer'
         );
     }
 

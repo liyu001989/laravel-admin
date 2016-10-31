@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use AdminDemo\Models\PostComment;
+use App\Models\PostComment;
 
 class PostCommentsTableSeeder extends Seeder
 {

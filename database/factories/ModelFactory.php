@@ -19,7 +19,7 @@ function randDate()
         ->subMinutes(rand(1, 60));
 }
 
-$factory->define(AdminDemo\Models\User::class, function (Faker\Generator $faker) {
+$factory->define(App\Models\User::class, function (Faker\Generator $faker) {
     $createdAt = randDate();
 
     return [
@@ -31,8 +31,8 @@ $factory->define(AdminDemo\Models\User::class, function (Faker\Generator $faker)
     ];
 });
 
-$factory->define(AdminDemo\Models\Post::class, function (Faker\Generator $faker) {
-    $userIds = AdminDemo\Models\User::pluck('id')->toArray();
+$factory->define(App\Models\Post::class, function (Faker\Generator $faker) {
+    $userIds = App\Models\User::pluck('id')->toArray();
     $createdAt = randDate();
 
     return [
@@ -44,9 +44,9 @@ $factory->define(AdminDemo\Models\Post::class, function (Faker\Generator $faker)
     ];
 });
 
-$factory->define(AdminDemo\Models\PostComment::class, function (Faker\Generator $faker) {
-    $userIds = AdminDemo\Models\User::pluck('id')->toArray();
-    $postIds = AdminDemo\Models\Post::pluck('id')->toArray();
+$factory->define(App\Models\PostComment::class, function (Faker\Generator $faker) {
+    $userIds = App\Models\User::pluck('id')->toArray();
+    $postIds = App\Models\Post::pluck('id')->toArray();
     $createdAt = randDate();
 
     return [

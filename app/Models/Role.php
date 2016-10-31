@@ -1,6 +1,6 @@
 <?php
 
-namespace AdminDemo\Models;
+namespace App\Models;
 
 use Zizaco\Entrust\EntrustRole;
 

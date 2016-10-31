@@ -1,6 +1,6 @@
 <?php
 
-namespace AdminDemo\Models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -17,12 +17,12 @@ class User extends BaseModel
 
     public function posts()
     {
-        return $this->hasMany('AdminDemo\Models\Post');
+        return $this->hasMany('App\Models\Post');
     }
 
     public function postComments()
     {
-        return $this->hasMany('AdminDemo\Models\PostComment');
+        return $this->hasMany('App\Models\PostComment');
     }
 
     public function getAvatarAttribute()

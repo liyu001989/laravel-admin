@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use AdminDemo\Models\User;
+use App\Models\User;
 use App\Http\Requests\User\StoreRequest;
 
 class UserController extends BaseController

@@ -1,6 +1,6 @@
 <?php
 
-namespace AdminDemo\Models;
+namespace App\Models;
 
 //use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 //use Illuminate\Auth\Authenticatable;
