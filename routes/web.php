@@ -27,6 +27,8 @@ Route::group(['namespace' => 'Admin', 'as' => 'admin.'], function () {
 
         Route::resource('posts', 'PostController');
 
+        Route::resource('roles', 'RoleController');
+
         // 查看日志
         Route::get('logs', [
             'as' => 'logs',
