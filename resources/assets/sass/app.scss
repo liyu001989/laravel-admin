@@ -1,38 +1,9 @@
-.btn-file {
-    position: relative;
-    overflow: hidden;
-}
 
-.btn-file input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 100px;
-    text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    outline: none;
-    background: white;
-    cursor: inherit;
-    display: block;
-}
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
-.btn-group {
-    .slim-menu {
-        min-width: 80px
-    }
-}
+// Variables
+@import "variables";
 
-.word-break {
-    -ms-word-break: break-all;
-    word-break: break-all;
-
-    /* Non standard for webkit */
-    word-break: break-word;
-
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
-}
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";

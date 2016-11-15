@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Laravel Admin Demo',
+    'name' => 'Laravel',
 
     /*
     |--------------------------------------------------------------------------
@@ -167,16 +167,8 @@ return [
          * Package Service Providers...
          */
 
-        // view composer
-        App\Providers\ComposerServiceProvider::class,
-        // identicon
-        Irazasyed\LaravelIdenticon\ServiceProvider::class,
-        // scout
-        Laravel\Scout\ScoutServiceProvider::class,
-        // entrust
-        Zizaco\Entrust\EntrustServiceProvider::class,
-        //log
-        Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
+        //
+
         /*
          * Application Service Providers...
          */
@@ -185,6 +177,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
     ],
 
     /*
@@ -204,6 +197,7 @@ return [
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
         'Blade' => Illuminate\Support\Facades\Blade::class,
+        'Bus' => Illuminate\Support\Facades\Bus::class,
         'Cache' => Illuminate\Support\Facades\Cache::class,
         'Config' => Illuminate\Support\Facades\Config::class,
         'Cookie' => Illuminate\Support\Facades\Cookie::class,
@@ -232,10 +226,6 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-        'Identicon'  => Irazasyed\LaravelIdenticon\Facade::class,
-
-        // entrust
-        'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
     ],
 
 ];
